@@ -30,6 +30,21 @@ namespace ÖVNING_1___Lön_efter_skatt
             double netto = (percent / 100) * brutto;
 
             Console.WriteLine($"Din bruttolön: {brutto}  Din skattesats: {percent}  Din Nettolön: {netto}");
+
+            Console.WriteLine($"Type:");
+            Console.WriteLine($"1: Make new calculation");
+            Console.WriteLine($"0: Return to main menu");
+            string salaryMenu = Console.ReadLine();
+            if (salaryMenu == "1")
+            {
+                SalaryCalculator salaryCalculator = new SalaryCalculator();
+                salaryCalculator.CalculateNetSalary();
+            }
+            else if (salaryMenu == "0")
+            {
+                MainMenu mainMenu1 = new MainMenu();
+                mainMenu1.mainMenu();
+            }
         }
     }
 }
