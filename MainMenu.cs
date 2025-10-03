@@ -23,6 +23,7 @@ namespace ÖVNING_1___Lön_efter_skatt
             Console.WriteLine("4: Bank account deposit");
             Console.WriteLine("5: AI chatbot");
             Console.WriteLine("6: Calculator");
+            Console.WriteLine("0: Exit program");
             // Read user input
             string mainMenu = Console.ReadLine();
             // Conditional statements for user input which program to run
@@ -60,6 +61,10 @@ namespace ÖVNING_1___Lön_efter_skatt
             {
                 Calculator calculator = new Calculator();
                 calculator.calculator();
+            }
+            else if (mainMenu == "0")
+            {
+                Environment.Exit(0);
             }
         }
 
