@@ -1,12 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace ÖVNING_1___Lön_efter_skatt
 {
+//Skapa en klass BankAccount med ett privat fält balance.
+//Gör en property Balance med getter och setter.
+//Setter ska vägra negativa värden.
+//Fråga användaren via Console.ReadLine() hur mycket de vill sätta in.
+//Visa nytt saldo.
     public class BankAccount
     {
         // Private field to store the balance

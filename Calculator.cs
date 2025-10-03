@@ -6,6 +6,16 @@ using System.Threading.Tasks;
 
 namespace ÖVNING_1___Lön_efter_skatt
 {
+//    Skapa en liten miniräknare som klarar fyra räknesätt.
+//Instruktioner:
+//Be användaren skriva in två tal (ett i taget).
+//Konvertera inmatningen till double.
+//Räkna ut och skriv ut resultat för:
+//Addition(+)
+//Subtraktion(–)
+//Multiplikation(*)
+//Division(/)
+//Visa alla resultat i konsolen.
     public class Calculator
     {
         // Method for calculator

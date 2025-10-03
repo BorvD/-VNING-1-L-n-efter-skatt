@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ÖVNING_1___Lön_efter_skatt
 {
+    //Programmet låtsas vara en AI-assistent.Användaren skriver en fråga, och programmet svarar med ett “slumpmässigt genererat AI-svar” - Använd Random klass !.
     public class AiChatbot
     {
         public void aiChatbot()
