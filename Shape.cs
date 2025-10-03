@@ -18,8 +18,10 @@ namespace ÖVNING_1___Lön_efter_skatt
 
     class ShapeMenu : Shape 
     {
+        // Menu for shapes
         public override void shape()
         {
+            // Ask the user which shape to calculate
             Console.WriteLine("Calculate the area of:");
             Console.WriteLine("1: Rektangel");
             Console.WriteLine("2: Circle");
@@ -27,17 +29,21 @@ namespace ÖVNING_1___Lön_efter_skatt
             Console.WriteLine("0: Return to Main menu");
             Console.WriteLine($"Type:");
             string shapeMenu = Console.ReadLine();
+            // Conditional statements for user input which shape to calculate
+            // If user input is 1, create a new Rectangle object and call its shape method
             if (shapeMenu == "1")
             {
                 Rektangel rektangel = new Rektangel();
                 rektangel.shape();
             }
+            // If user input is 2, create a new Circle object and call its shape method
             else if (shapeMenu == "2")
             { 
                 Circle circle = new Circle();
                 circle.shape();
             }
-            else if(shapeMenu == "3")
+            // If user input is 3, create a new Triangle object and call its shape method
+            else if (shapeMenu == "3")
             {
                 Triangle triangle = new Triangle();
                 triangle.shape();
@@ -46,22 +52,32 @@ namespace ÖVNING_1___Lön_efter_skatt
 
     }
 
+    // Rectangle class inheriting from Shape
     class Rektangel : Shape
     {
+        // Override the shape method to calculate the area of a rectangle
         public override void shape()
         {
+            // Ask the user for length and width
             Console.WriteLine("Write the length");
+            // Convert the user input to a double
             double length = Convert.ToDouble(Console.ReadLine());
 
+            // Ask the user for width
             Console.WriteLine("Write the width");
+            // Convert the user input to a double
             double hight = Convert.ToDouble(Console.ReadLine());
 
+            // Calculate the area of the rectangle
             double area = length * hight;
+            // Display the area of the rectangle
             Console.WriteLine($"Length:{length} * Hight:{hight} = Area:{area}");
 
+            // Menu for next action
             Console.WriteLine($"Type:");
             Console.WriteLine($"1: Make new calculation");
             Console.WriteLine($"0: Return to main menu");
+            // Make a new calculation or return to main menu
             string rektangleMenu = Console.ReadLine();
             if (rektangleMenu == "1")
             {

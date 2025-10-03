@@ -20,15 +20,21 @@ namespace ÖVNING_1___Lön_efter_skatt
     //Skapa ett objekt av klassen och skriv ut nettolönen med Console.WriteLine()
     public class SalaryCalculator
     {
+        // Method to calculate net salary
         public void CalculateNetSalary()
         {
+            // Ask the user for their gross salary
             Console.WriteLine("Ange din bruttolön");
+            // Convert the user's input to an integer
             int brutto = Convert.ToInt32(Console.ReadLine());
 
+            // Ask the user for their tax rate in percent
             Console.WriteLine("Ange din skattesats i procent (bara siffror)");
+            // Convert the user's input to a double
             double percent = Convert.ToInt32(Console.ReadLine());
+            // Calculate the net salary
             double netto = (percent / 100) * brutto;
-
+            // Subtract the tax from the gross salary to get the net salary
             Console.WriteLine($"Din bruttolön: {brutto}  Din skattesats: {percent}  Din Nettolön: {netto}");
 
             Console.WriteLine($"Type:");
