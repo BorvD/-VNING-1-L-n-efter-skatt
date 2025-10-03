@@ -14,6 +14,7 @@ namespace ÖVNING_1___Lön_efter_skatt
             Console.WriteLine("1: Calculate your salary after taxes");
             Console.WriteLine("2: Calculate how much fuel the vehicle use");
             Console.WriteLine("3: Calculate the area of a shape");
+            Console.WriteLine("4: Bank account deposit");
             string mainMenu = Console.ReadLine();
             if (mainMenu == "1")
             {
@@ -29,6 +30,11 @@ namespace ÖVNING_1___Lön_efter_skatt
             { 
                 ShapeMenu shape = new ShapeMenu();
                 shape.shape();
+            }
+            else if (mainMenu == "4")
+                {
+                BankAccount bankAccount = new BankAccount();
+                bankAccount.bankAccount();
             }
         }
 
