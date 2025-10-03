@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace ÖVNING_1___Lön_efter_skatt
 {
+    // Skapa en mer ineraktiv meny som låter användaren välja vilket program de vill köra.
+    // Knyt ihop alla tidigare uppgifter i denna meny.
+    // Håll Program.cs så ren som möjligt.
     public class MainMenu
     {
+
         // Main menu method
         public void mainMenu() 
         {
@@ -18,6 +22,7 @@ namespace ÖVNING_1___Lön_efter_skatt
             Console.WriteLine("3: Calculate the area of a shape");
             Console.WriteLine("4: Bank account deposit");
             Console.WriteLine("5: AI chatbot");
+            Console.WriteLine("6: Calculator");
             // Read user input
             string mainMenu = Console.ReadLine();
             // Conditional statements for user input which program to run
@@ -50,6 +55,11 @@ namespace ÖVNING_1___Lön_efter_skatt
             {
                 AiChatbot aiChatbot = new AiChatbot();
                 aiChatbot.aiChatbot();
+            }
+            else if (mainMenu == "6")
+            {
+                Calculator calculator = new Calculator();
+                calculator.calculator();
             }
         }
 
